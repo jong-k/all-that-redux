@@ -1,5 +1,2 @@
-# TODO-APP
-
-## 추가할 기능
-
-- input 창에 입력값 없이 등록하면 등록 안되게 수정
+# Unstoppable
+> Till all problems settled.
