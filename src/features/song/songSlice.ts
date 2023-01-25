@@ -14,12 +14,13 @@ const songSlice = createSlice({
       const index = state.indexOf(action.payload);
       state.splice(index, 1);
     },
-    resetSong() {
-      return [];
-    },
+  },
+  // extraReducers 를 통해 다른 slice의 action 발생을 감지하고 reducer 생성
+  extraReducers(builder) {
+    builder.addCase("movie/reset", () => []);
   },
 });
 
 export { songSlice };
-export const { addSong, removeSong, resetSong } = songSlice.actions;
+export const { addSong, removeSong } = songSlice.actions;
 // export default songSlice.reducer

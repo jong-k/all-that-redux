@@ -14,7 +14,7 @@ const movieSlice = createSlice({
       const index = state.indexOf(action.payload);
       state.splice(index, 1);
     },
-    resetMovie() {
+    reset() {
       // state = [] 이렇게 하면 안됨, 상태를 바꾸려면 기존 상태를 이용해서 새로운 상태를 만들어야 함
       return [];
     },
@@ -22,5 +22,5 @@ const movieSlice = createSlice({
 });
 
 export { movieSlice };
-export const { addMovie, removeMovie, resetMovie } = movieSlice.actions;
+export const { addMovie, removeMovie, reset } = movieSlice.actions;
 // export default songSlice.reducer
