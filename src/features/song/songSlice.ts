@@ -1,8 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAction } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { reset } from "../movie/movieSlice";
+// import { reset } from "../movie/movieSlice";
 
 const initialState: string[] = []; // 타입 에러를 방지하기 위해 밖에서 미리 정의
+export const reset = createAction("app/reset");
 
 const songSlice = createSlice({
   name: "song",
@@ -20,7 +21,9 @@ const songSlice = createSlice({
   extraReducers(builder) {
     // builder.addCase("movie/reset", () => []);
     // 문자열을 직접 입력하지 않고 action creator만 전달해도 됨
-    builder.addCase(reset, () => []);
+    // builder.addCase(reset, () => []);
+
+    builder.addCase(reset, () => []); // createAction 으로 직접 action creator 만들기
   },
 });
 
