@@ -1,13 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { songSlice } from "../features/song/songSlice";
-import { movieSlice } from "../features/movie/movieSlice";
+import { songsSlice } from "../features/song/songsSlice";
+import { moviesSlice } from "../features/movie/moviesSlice";
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    songs: songSlice.reducer,
-    movies: movieSlice.reducer,
+    songs: songsSlice.reducer,
+    movies: moviesSlice.reducer,
   },
 });
 
+export { store };
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

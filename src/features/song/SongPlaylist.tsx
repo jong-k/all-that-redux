@@ -1,6 +1,6 @@
-import { createRandomSong } from "../data";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
-import { addSong, removeSong } from "../features/song/songSlice";
+import { createRandomSong } from "../../data";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { addSong, removeSong } from "./songsSlice";
 
 function SongPlaylist() {
   const dispatch = useAppDispatch();

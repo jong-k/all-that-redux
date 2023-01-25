@@ -1,7 +1,7 @@
-import MoviePlaylist from "./components/MoviePlaylist";
-import SongPlaylist from "./components/SongPlaylist";
-import { useAppDispatch } from "./app/hooks";
-import { reset } from "./features/song/songSlice";
+import MoviePlaylist from "../features/movie/MoviePlaylist";
+import SongPlaylist from "../features/song/SongPlaylist";
+import { useAppDispatch } from "./hooks";
+import { reset } from "../features/song/songsSlice";
 
 export default function App() {
   const dispatch = useAppDispatch();

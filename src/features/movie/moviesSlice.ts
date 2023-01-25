@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { reset } from "../song/songSlice";
+import { reset } from "../song/songsSlice";
 
 const initialState: string[] = [];
 
-const movieSlice = createSlice({
+export const moviesSlice = createSlice({
   name: "movie",
   initialState,
   reducers: {
@@ -25,6 +25,5 @@ const movieSlice = createSlice({
   },
 });
 
-export { movieSlice };
-export const { addMovie, removeMovie } = movieSlice.actions;
-// export default songSlice.reducer
+export const { addMovie, removeMovie } = moviesSlice.actions;
+export default moviesSlice.reducer;

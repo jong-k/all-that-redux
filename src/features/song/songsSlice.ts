@@ -5,7 +5,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 const initialState: string[] = []; // 타입 에러를 방지하기 위해 밖에서 미리 정의
 export const reset = createAction("app/reset");
 
-const songSlice = createSlice({
+const songsSlice = createSlice({
   name: "song",
   initialState,
   reducers: {
@@ -27,6 +27,6 @@ const songSlice = createSlice({
   },
 });
 
-export { songSlice };
-export const { addSong, removeSong } = songSlice.actions;
-// export default songSlice.reducer
+export { songsSlice };
+export const { addSong, removeSong } = songsSlice.actions;
+export default songsSlice.reducer;

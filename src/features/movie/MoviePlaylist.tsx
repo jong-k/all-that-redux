@@ -1,6 +1,6 @@
-import { createRandomMovie } from "../data";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
-import { addMovie, removeMovie } from "../features/movie/movieSlice";
+import { createRandomMovie } from "../../data";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { addMovie, removeMovie } from "./moviesSlice";
 
 function MoviePlaylist() {
   const dispatch = useAppDispatch();

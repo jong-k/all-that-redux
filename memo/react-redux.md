@@ -31,6 +31,6 @@ store.dispatch({
   payload: "New Song!!!",
 });
 // useDispatch 안쓰고 직접 dispatch하는 방법 2
-store.dispatch(songSlice.actions.addSong("New Song2!!!"));
+store.dispatch(songsSlice.actions.addSong("New Song2!!!"));
 
 ```
