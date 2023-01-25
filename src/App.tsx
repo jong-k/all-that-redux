@@ -1,9 +1,14 @@
 import MoviePlaylist from "./components/MoviePlaylist";
 import SongPlaylist from "./components/SongPlaylist";
+import { useAppDispatch } from "./app/hooks";
+import { resetSong } from "./features/song/songSlice";
+import { resetMovie } from "./features/movie/movieSlice";
 
 export default function App() {
+  const dispatch = useAppDispatch();
   const handleResetClick = () => {
-    //
+    dispatch(resetSong());
+    dispatch(resetMovie());
   };
 
   return (

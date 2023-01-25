@@ -46,5 +46,6 @@ Redux에서는 state를 변경하려면 무조건 dispatch 함수를 호출해�
 - 작성해야할 boilerplate code가 많다
 ### 2.2. Redux Toolkit (RTK)
 RTK는 일반 Redux에 추가 기능을 더해, Redux를 사용하는 최신 방법이다
+- 자동으로 reducer 함수에 immer 적용해줌
 - action type 생성을 간소화
 - 공식적으로 권장되는 방법
