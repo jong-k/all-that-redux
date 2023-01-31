@@ -1,5 +1,6 @@
 # redux 프로젝트의 폴더 구조
 ## 1. Function 기준으로 정리
+```text
 src/
 ├─ components/        <- 모든 컴포넌트
 │  ├─ MoviePlaylist.tsx
@@ -13,8 +14,10 @@ src/
 │  └─ index.ts         <- Redux Store
 ├─ App.tsx
 └─ index.ts
+```
 
-## 2. Feature 기준으로 정리 (공식 문서에서 권장)
+## 2. Feature 기준으로 정리 (Plain Redux 공식 문서에서 권장)
+```text
 src/
 ├─ feature/        <- 모든 기능을 내부 폴더에 정리
 │  ├─ movies/
@@ -28,8 +31,9 @@ src/
 │  ├─ hooks.ts
 │  └─ app.tsx
 └─ index.ts
+```
 
-## 3. 공식 문서에서는...
+## 3. RTK 공식 문서에서는...
 - 어느 것을 사용해도 무방하다!
 - Redux Toolkit 공식 문서에서는 별도지침 없음
 - RTK 에서는 `Feature` 방식이 잘 맞지 않음
